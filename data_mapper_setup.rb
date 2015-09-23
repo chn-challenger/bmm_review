@@ -12,4 +12,5 @@ require './app/models/tag'
 DataMapper.finalize
 
 # However, the database tables don't exist yet. Let's tell datamapper to create them
+# DataMapper.auto_migrate!
 DataMapper.auto_upgrade!
