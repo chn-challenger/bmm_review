@@ -6,6 +6,7 @@ env = ENV['RACK_ENV'] || 'dev'
 DataMapper.setup(:default, "postgres://localhost/bmm_dev")
 
 require './app/models/link' # require each model individually - the path may vary depending on your file structure.
+require './app/models/tag'
 
 # After declaring your models, you should finalise them
 DataMapper.finalize
